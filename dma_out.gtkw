@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Thu Nov 21 05:36:14 2019
+[*]
+[dumpfile] "/mnt/overflow/work/trigger_thing/wave_dump.vcd"
+[dumpfile_mtime] "Thu Nov 21 05:35:30 2019"
+[dumpfile_size] 11162
+[savefile] "/mnt/overflow/work/trigger_thing/dma_out.gtkw"
+[timestart] 85
+[size] 2560 1350
+[pos] -1 -1
+*-5.000000 146 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[sst_width] 223
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 434
+@28
+TOP.timer_thing.clk
+@200
+---- Inputs ---
+@28
+TOP.timer_thing.input_a
+TOP.timer_thing.input_b
+@200
+---- Outputs ---
+@28
+TOP.timer_thing.output_c
+@200
+---- Internals ---
+@24
+TOP.timer_thing.counter[31:0]
+@28
+TOP.timer_thing.latch_a
+[pattern_trace] 1
+[pattern_trace] 0
