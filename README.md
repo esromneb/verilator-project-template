@@ -1,7 +1,7 @@
 What is this
 ===
 
-A simple verilator and verilog setup for testing `timer_thing.sv`
+A simple Verilator and Verilog project setup for testing a timer (`timer_thing.sv`). Use this project as a template and starting place for your own Verilator projects!
 
 
 Running
