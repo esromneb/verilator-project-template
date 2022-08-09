@@ -20,3 +20,6 @@ jobs:
 
     - name: Run example
       run: make
+
+    - name: Test that vcd was written
+      run: stat wave_dump.vcd
