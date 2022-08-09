@@ -40,7 +40,7 @@ Install Verilator on Ubuntu
 
 Deps:
 ```bash
-sudo apt-get install flex bison autoconf
+sudo apt-get flex bison autoconf libfl-dev gdb
 ```
 
 Install:
