@@ -1,3 +1,5 @@
+![verilate workflow](https://github.com/esromneb/verilator-project-template/actions/workflows/verilate.yml/badge.svg)
+
 What is this
 ===
 
