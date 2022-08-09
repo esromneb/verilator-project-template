@@ -48,7 +48,7 @@ Install:
 cd
 git clone http://git.veripool.org/git/verilator
 cd verilator
-git checkout verilator_4_016
+git checkout v4.016
 autoconf
 ./configure
 make
