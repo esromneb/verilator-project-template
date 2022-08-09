@@ -16,7 +16,7 @@ jobs:
       run: sudo apt-get install -y flex bison autoconf
 
     - name: Get Verilator
-      run: cd /opt && git clone http://git.veripool.org/git/verilator && cd verilator && git checkout verilator_4_016 && autoconf && ./configure && make && make test && sudo make install
+      run: cd /opt && git clone http://git.veripool.org/git/verilator && cd verilator && git checkout v4.016 && autoconf && ./configure && make && make test && sudo make install
 
     - name: Run example
       run: make
