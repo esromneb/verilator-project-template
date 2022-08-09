@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Get deps
-      run: sudo apt-get install -y flex bison autoconf libfl-dev
+      run: sudo apt-get install -y flex bison autoconf libfl-dev gdb
 
     - name: Get Verilator
       run: cd /opt && git clone http://git.veripool.org/git/verilator && cd verilator && git checkout v4.016 && autoconf && ./configure && make -j4 && make test && sudo make install
