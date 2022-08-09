@@ -1,0 +1,25 @@
+name: verilate
+
+on:
+  push:
+
+jobs:
+  build:
+    timeout-minutes: 15
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Get deps
+      run: sudo apt-get install -y flex bison autoconf libfl-dev gdb
+
+    - name: Get Verilator
+      run: cd /opt && git clone http://git.veripool.org/git/verilator && cd verilator && git checkout v4.016 && autoconf && ./configure && make -j4 && make test && sudo make install
+
+    - name: Run example
+      run: make
+
+    - name: Test that vcd was written
+      run: stat wave_dump.vcd
