@@ -1,0 +1,22 @@
+name: verilate
+
+on:
+  push:
+
+jobs:
+  build:
+    timeout-minutes: 15
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Get deps
+      run: sudo apt-get install -y flex bison autoconf
+
+    - name: Get Verilator
+      run: cd /opt && git clone http://git.veripool.org/git/verilator && cd verilator && git checkout verilator_4_016 && autoconf && ./configure && make && make test && sudo make install
+
+    - name: Run example
+      run: make
