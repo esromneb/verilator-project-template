@@ -57,7 +57,7 @@ cd verilator
 git checkout v4.228
 autoconf
 ./configure
-make
+make -j4
 make test
 sudo make install
 ```
