@@ -5,6 +5,10 @@ What is this
 
 A simple Verilator and Verilog project setup for testing a timer (`timer_thing.sv`). Use this project as a template and starting place for your own Verilator projects!
 
+Setup
+===
+* Follow the steps at the bottom to install Verilator and Gtkwave
+* clone this repo, and type `make` and then `make show`
 
 Running
 ===
